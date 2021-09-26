@@ -340,7 +340,7 @@ function ccvAnimation_getFrame(ccvAnimation_Output_Frame) {
 	ccvPan_1.beginPath();									//產生一個新路徑，產生後再使用繪圖指令來設定路徑
 	ccvPan_1.font = "normal bold 100px Microsoft JhengHei";
 	ccvPan_1.textBaseline = "top";
-	ccvPan_1.strokeStyle = "#000000";
+	ccvPan_1.strokeStyle = `${document.getElementById("ccvColor_0").value}`;
 	ccvPan_1.lineWidth = 20; //define the width of the stroke line 
 	ccvPan_1.strokeText(`${ccvAnimation_Output_Frame}`, 20, 20);
 	ccvPan_1.closePath();
@@ -348,7 +348,7 @@ function ccvAnimation_getFrame(ccvAnimation_Output_Frame) {
 	ccvPan_1.beginPath();									//產生一個新路徑，產生後再使用繪圖指令來設定路徑
 	ccvPan_1.font = "normal bold 100px Microsoft JhengHei";
 	ccvPan_1.textBaseline = "top";
-	ccvPan_1.strokeStyle = "#ff00ff";
+	ccvPan_1.strokeStyle = `${document.getElementById("ccvColor_1").value}`;
 	ccvPan_1.lineWidth = 10; //define the width of the stroke line 
 	ccvPan_1.strokeText(`${ccvAnimation_Output_Frame}`, 20, 20);
 	ccvPan_1.closePath();
@@ -356,7 +356,7 @@ function ccvAnimation_getFrame(ccvAnimation_Output_Frame) {
 	ccvPan_1.beginPath();									//產生一個新路徑，產生後再使用繪圖指令來設定路徑
 	ccvPan_1.font = "normal bold 100px Microsoft JhengHei";
 	ccvPan_1.textBaseline = "top";
-	ccvPan_1.fillStyle = "#ffffff";
+	ccvPan_1.fillStyle = `${document.getElementById("ccvColor_2").value}`;
 	ccvPan_1.fillText(`${ccvAnimation_Output_Frame}`, 20, 20);
 	ccvPan_1.closePath();
 }
@@ -558,7 +558,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 		ccvPan_Mask.font = "normal bold 32px Microsoft JhengHei";
 		ccvPan_Mask.textBaseline = "top";
 		ccvPan_Mask.textAlign = "start";
-		ccvPan_Mask.strokeStyle = "#000000";
+		ccvPan_Mask.strokeStyle = `${document.getElementById("ccvColor_0").value}`;
 		ccvPan_Mask.lineWidth = 20; //define the width of the stroke line 
 		ccvPan_Mask.strokeText(`${subtitle_sub_Bunsho}`,
 			30,
@@ -569,7 +569,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 		ccvPan_Mask.font = "normal bold 32px Microsoft JhengHei";
 		ccvPan_Mask.textBaseline = "top";
 		ccvPan_Mask.textAlign = "start";
-		ccvPan_Mask.strokeStyle = "#ff00ff";
+		ccvPan_Mask.strokeStyle = `${document.getElementById("ccvColor_1").value}`;
 		ccvPan_Mask.lineWidth = 10; //define the width of the stroke line 
 		ccvPan_Mask.strokeText(`${subtitle_sub_Bunsho}`,
 			30,
@@ -580,7 +580,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 		ccvPan_Mask.font = "normal bold 32px Microsoft JhengHei";
 		ccvPan_Mask.textBaseline = "top";
 		ccvPan_Mask.textAlign = "start";
-		ccvPan_Mask.fillStyle = "#ffffff";
+		ccvPan_Mask.fillStyle = `${document.getElementById("ccvColor_2").value}`;
 		ccvPan_Mask.fillText(`${subtitle_sub_Bunsho}`,
 			30,
 			658);
@@ -593,7 +593,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 	ccvPan_Mask.font = "normal bold 64px Microsoft JhengHei";
 	ccvPan_Mask.textBaseline = "top";
 	ccvPan_Mask.textAlign = "start";
-	ccvPan_Mask.strokeStyle = "#000000";
+	ccvPan_Mask.strokeStyle = `${document.getElementById("ccvColor_0").value}`;
 	ccvPan_Mask.lineWidth = 20; //define the width of the stroke line 
 	ccvPan_Mask.strokeText(`${subtitle_sub_Bunsho}`,
 		50 + ccvAnimation_subtitleFrame_Position * 30,
@@ -604,7 +604,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 	ccvPan_Mask.font = "normal bold 64px Microsoft JhengHei";
 	ccvPan_Mask.textBaseline = "top";
 	ccvPan_Mask.textAlign = "start";
-	ccvPan_Mask.strokeStyle = "#ff00ff";
+	ccvPan_Mask.strokeStyle = `${document.getElementById("ccvColor_1").value}`;
 	ccvPan_Mask.lineWidth = 10; //define the width of the stroke line 
 	ccvPan_Mask.strokeText(`${subtitle_sub_Bunsho}`,
 		50 + ccvAnimation_subtitleFrame_Position * 30,
@@ -615,7 +615,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 	ccvPan_Mask.font = "normal bold 64px Microsoft JhengHei";
 	ccvPan_Mask.textBaseline = "top";
 	ccvPan_Mask.textAlign = "start";
-	ccvPan_Mask.fillStyle = "#ffffff";
+	ccvPan_Mask.fillStyle = `${document.getElementById("ccvColor_2").value}`;
 	ccvPan_Mask.fillText(`${subtitle_sub_Bunsho}`,
 		50 + ccvAnimation_subtitleFrame_Position * 30,
 		500 + ccvAnimation_subtitleFrame_Position * 126);
@@ -626,7 +626,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 		ccvPan_Mask.font = "normal bold 32px Microsoft JhengHei";
 		ccvPan_Mask.textBaseline = "top";
 		ccvPan_Mask.textAlign = "center";
-		ccvPan_Mask.strokeStyle = "#000000";
+		ccvPan_Mask.strokeStyle = `${document.getElementById("ccvColor_0").value}`;
 		ccvPan_Mask.lineWidth = 20; //define the width of the stroke line 
 		ccvPan_Mask.strokeText(`${subtitle_sub_Hiragana[subtitle_Hiragana_i][0]}`,
 			((2 * subtitle_sub_Hiragana[subtitle_Hiragana_i][1] - subtitle_sub_Hiragana[subtitle_Hiragana_i][2]) / 2) * 64 + 50 + ccvAnimation_subtitleFrame_Position * 30,
@@ -638,7 +638,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 		ccvPan_Mask.font = "normal bold 32px Microsoft JhengHei";
 		ccvPan_Mask.textBaseline = "top";
 		ccvPan_Mask.textAlign = "center";
-		ccvPan_Mask.strokeStyle = "#ff00ff";
+		ccvPan_Mask.strokeStyle = `${document.getElementById("ccvColor_1").value}`;
 		ccvPan_Mask.lineWidth = 10; //define the width of the stroke line 
 		ccvPan_Mask.strokeText(`${subtitle_sub_Hiragana[subtitle_Hiragana_i][0]}`,
 			((2 * subtitle_sub_Hiragana[subtitle_Hiragana_i][1] - subtitle_sub_Hiragana[subtitle_Hiragana_i][2]) / 2) * 64 + 50 + ccvAnimation_subtitleFrame_Position * 30,
@@ -650,7 +650,7 @@ function ccvAnimation_subtitle(ccvAnimation_subtitleText, ccvAnimation_subtitleF
 		ccvPan_Mask.font = "normal bold 32px Microsoft JhengHei";
 		ccvPan_Mask.textBaseline = "top";
 		ccvPan_Mask.textAlign = "center";
-		ccvPan_Mask.fillStyle = "#ffffff";
+		ccvPan_Mask.fillStyle = `${document.getElementById("ccvColor_2").value}`;
 		ccvPan_Mask.fillText(`${subtitle_sub_Hiragana[subtitle_Hiragana_i][0]}`,
 			((2 * subtitle_sub_Hiragana[subtitle_Hiragana_i][1] - subtitle_sub_Hiragana[subtitle_Hiragana_i][2]) / 2) * 64 + 50 + ccvAnimation_subtitleFrame_Position * 30,
 			458 + ccvAnimation_subtitleFrame_Position * 126,
@@ -721,11 +721,15 @@ var ccvTable_Subtitle = `
 	<td colspan="2" style="width: 2560px">
 		<p style="font-size: 30px;">&ensp;&ensp;文本&ensp;&ensp;
 		<button onclick="ccvVideo_Refresh()" style="font-size: 30px;">重新整理</button>
+		<input id="ccvColor_0" type="text" style="font-size: 30px;" value = "#000000">
+		<input id="ccvColor_1" type="text" style="font-size: 30px;" value = "#ff00ff">
+		<input id="ccvColor_2" type="text" style="font-size: 30px;" value = "#ffffff">
 	</td>
 </tr>
 `;
 var ccvTable_Subtitle_addedTable = "";
 var ccvAnimation_FrameNumber = 0;
+
 function ccvTable_Subtitle_add(){
 	ccvTable_Subtitle_addedTable = `
 <tr>
@@ -834,5 +838,3 @@ function ccvSubtitle_Position_change(ccvPosition) {
 		return "多力多滋";
 	}
 }
-
-
