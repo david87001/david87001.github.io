@@ -178,7 +178,7 @@ function ccvAnimation() {
 	}
 	
 	//ccvAnimation_toScreentone(Myr1);//畫網點
-	//ccvAnimation_colorRGB(Myr1);
+	ccvAnimation_colorRGB(Myr1);
 
 
 	///////////以下測試///////////
