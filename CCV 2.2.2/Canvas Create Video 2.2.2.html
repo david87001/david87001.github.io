@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas Create Video</title>
+	<meta name="author" content="林冠宇(LIN,GUAN-YU)">
+	<style>
+		video {
+			visibility: hidden;
+		}
+
+		#ccvCanvas_1 {
+			background: rgb(165, 165, 165);
+		}
+	</style>
+	<script src="Don Don Donuts 1.1.1.js"></script>
+	<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.8.1/dist/ffmpeg.min.js"></script>
+	<script src="VideoBuilder-master\base64.js"></script>
+	<script src="VideoBuilder-master\video-builder.js"></script>
+</head>
+
+<body>
+	<input type="file" style="width: 500px; font-size: 20px;" onchange="ccvLodeVideo(this)" style="font-size: 30px;">
+	<p id="ccvVideo_time" style="font-size: 30px;">123</p>
+	<button onclick="AudioContext_Ready()" style="font-size: 80px;">AudioContext(記得要按)</button>
+	<button onclick="ccvClearArray()" style="font-size: 20px;">ClearArray(想到可以按)</button>
+	<div>
+		<button onclick="ccvVideo_Play()" style="font-size: 50px;">Play</button>
+		<button onclick="ccvVideo_Pause()" style="font-size: 50px;">Pause</button>
+		<button onclick="ccvVideo_Return()" style="font-size: 50px;">Return</button>
+		<button onclick="ccvTable_Subtitle_add()" style="font-size: 100px;">Mark</button>
+	</div>
+	
+	<canvas id="ccvCanvas_1" width="1280" height="720"></canvas>
+	<button onclick="ccvVideo_Output_Button()" style="font-size: 60px;">Output</button>
+	<canvas id="ccvCanvas_2"  style="display:none" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Mask" style="display:none" width="1280" height="720"></canvas>
+	<table id="ccvTable" border="8"></table>
+	<div>
+		<h1>猴子大概看不懂的使用教學</h1>
+		<ol style="font-size: 30px;">
+			<li>選擇一個影片檔</li>
+			<li>按下AudioContext，承受來自GoogleChrome的惡意</li>
+			<li>按下Play鍵，AudioContext(音檔文本)必須有聲音才會運作(或是我太廢，反正我寫完了也不想大改)</li>
+			<li>聽歌，順便檢查你剪的好不好(注意：要聽到歌曲完全結束)</li>
+			<li>放完一遍後直接按下Output輸出，輸出時把電腦擺在地上繞著它學鵪鶉叫，這會有助於幫開發者提供生活笑料</li>
+			<li>完成後檢查一下有沒有卡頓的問題，有的話請告訴我</li>
+			<li>最後你將下定決心去學 HTML, CSS, JavaScript，走上Canvas的道路，開始寫程式剪歌</li>
+		</ol>
+		<ul style="font-size: 30px;">
+			<li>注意，謝謝你的注意</li>
+			<li>ClearArray會清掉收集起來的AudioContext陣列，你想換歌或播放間按過Return時會需要的</li>
+			<li>requestAnimationFrame會自動休息，所以<b><u>在播放輸出期間跳離瀏覽器都會導致錯誤</u></b></li>
+			<li>建議按F12開啟主控台，出現問題請截圖給我看</li>
+			<li>輸出一律是 1280*720, 29.976 fps，想改不會改的人請私訊我</li>
+		</ul>
+	</div>
+	<button onclick="ccvVideo_Go()">GO</button><br>
+	<video id="ccvVideo" style="display:none" width="1280" height="720"></video>
+	<video id="ccvVideo_2" style="display:none" width="1280" height="720"></video>
+	<canvas id="ccvCanvas_Screentone_20" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Screentone_40" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Screentone_60" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Screentone_80" width="1280" height="720"></canvas>
+	<p>
+		作者：林冠宇(多力多滋(立茲))<br>
+		聯絡我<br>
+		電話：0960-629-148<br>
+		噗浪：@david87001<br>
+		信箱：david87001@gmail.com<br>
+	</p>
+	<p>請使用Firefox、Opera、Chrome或Microsoft Edge瀏覽本站</p>
+	<script src="ccvScreentone.js"></script>
+	<script src="Canvas Create Video 2.2.2.js"></script>
+</body>
+
+</html>
